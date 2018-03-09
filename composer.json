@@ -1,5 +1,5 @@
 {
-    "name": "devgroup/yii2-tag-dependency-helper",
+    "name": "factorenergia/yii2-tag-dependency-helper",
     "description": "Helper for unifying cache tag names with invalidation support in yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","cache"],
@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DevGroup\\TagDependencyHelper\\": "src/"
+            "factorenergia\\TagDependencyHelper\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DevGroup\\TagDependencyHelper\\tests\\": "tests/"
+            "factorenergia\\TagDependencyHelper\\tests\\": "tests/"
         }
     }
 }

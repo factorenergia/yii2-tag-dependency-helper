@@ -3,14 +3,14 @@
  * This unit tests are based on work of Alexander Kochetov (@creocoder) and original yii2 tests
  */
 
-namespace DevGroup\TagDependencyHelper\tests;
+namespace factorenergia\TagDependencyHelper\tests;
 
-use DevGroup\TagDependencyHelper\NamingHelper;
-use DevGroup\TagDependencyHelper\TagDependencyTrait;
-use DevGroup\TagDependencyHelper\tests\models\Post;
-use DevGroup\TagDependencyHelper\tests\models\PostComposite;
-use DevGroup\TagDependencyHelper\tests\models\PostCompositeNoOverride;
-use DevGroup\TagDependencyHelper\tests\models\PostNoTrait;
+use factorenergia\TagDependencyHelper\NamingHelper;
+use factorenergia\TagDependencyHelper\TagDependencyTrait;
+use factorenergia\TagDependencyHelper\tests\models\Post;
+use factorenergia\TagDependencyHelper\tests\models\PostComposite;
+use factorenergia\TagDependencyHelper\tests\models\PostCompositeNoOverride;
+use factorenergia\TagDependencyHelper\tests\models\PostNoTrait;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\base\InvalidParamException;
@@ -66,7 +66,7 @@ class DatabaseTest extends \PHPUnit_Extensions_Database_TestCase
                 'cache' => [
                     'class' => '\yii\caching\FileCache',
                     'as lazy' => [
-                        'class' => 'DevGroup\TagDependencyHelper\LazyCache',
+                        'class' => 'factorenergia\TagDependencyHelper\LazyCache',
                     ],
                 ],
             ],
@@ -219,7 +219,7 @@ class DatabaseTest extends \PHPUnit_Extensions_Database_TestCase
     public function testLazyCache()
     {
         $changed = false;
-        /** @var \yii\caching\Cache|\DevGroup\TagDependencyHelper\LazyCache $cache */
+        /** @var \yii\caching\Cache|\factorenergia\TagDependencyHelper\LazyCache $cache */
         $cache = Yii::$app->cache;
         $val = $cache->lazy(function() use(&$changed) {
             $changed = true;
@@ -314,7 +314,7 @@ class DatabaseTest extends \PHPUnit_Extensions_Database_TestCase
         $this->assertEquals($text_for_update, $post->text);
 
         $this->assertEquals(
-            'DevGroup\TagDependencyHelper\tests\models\PostComposite[CompositeTag(author_id):(2)]',
+            'factorenergia\TagDependencyHelper\tests\models\PostComposite[CompositeTag(author_id):(2)]',
             NamingHelper::getCompositeTag($post, ['author_id' => $id_author])
         );
 

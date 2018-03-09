@@ -1,6 +1,6 @@
 <?php
 
-namespace DevGroup\TagDependencyHelper;
+namespace factorenergia\TagDependencyHelper;
 
 use Yii;
 use yii\base\Behavior;

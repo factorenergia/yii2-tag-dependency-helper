@@ -6,7 +6,7 @@
  * Time: 16:05
  */
 
-namespace DevGroup\TagDependencyHelper;
+namespace factorenergia\TagDependencyHelper;
 
 use yii\caching\TagDependency;
 
@@ -14,7 +14,7 @@ use yii\caching\TagDependency;
  * LazyCacheTrait is used when you have your own implementation of \yii\caching\Cache and don't want to use as behavior.
  * Trait is a bit faster behavior.
  *
- * @package DevGroup\TagDependencyHelper
+ * @package factorenergia\TagDependencyHelper
  */
 trait LazyCacheTrait
 {

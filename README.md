@@ -1,12 +1,12 @@
 yii2-tag-dependency-helper
 ==========================
-[![Latest Stable Version](https://poser.pugx.org/devgroup/yii2-tag-dependency-helper/v/stable)](https://packagist.org/packages/devgroup/yii2-tag-dependency-helper)
-[![Total Downloads](https://poser.pugx.org/devgroup/yii2-tag-dependency-helper/downloads)](https://packagist.org/packages/devgroup/yii2-tag-dependency-helper)
-[![Latest Unstable Version](https://poser.pugx.org/devgroup/yii2-tag-dependency-helper/v/unstable)](https://packagist.org/packages/devgroup/yii2-tag-dependency-helper)
-[![License](https://poser.pugx.org/devgroup/yii2-tag-dependency-helper/license)](https://packagist.org/packages/devgroup/yii2-tag-dependency-helper)
-[![Code Climate](https://codeclimate.com/github/DevGroup-ru/yii2-tag-dependency-helper/badges/gpa.svg)](https://codeclimate.com/github/DevGroup-ru/yii2-tag-dependency-helper)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/DevGroup-ru/yii2-tag-dependency-helper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/DevGroup-ru/yii2-tag-dependency-helper/?branch=master)
-[![Build Status](https://travis-ci.org/DevGroup-ru/yii2-tag-dependency-helper.svg?branch=master)](https://travis-ci.org/DevGroup-ru/yii2-tag-dependency-helper)
+[![Latest Stable Version](https://poser.pugx.org/factorenergia/yii2-tag-dependency-helper/v/stable)](https://packagist.org/packages/factorenergia/yii2-tag-dependency-helper)
+[![Total Downloads](https://poser.pugx.org/factorenergia/yii2-tag-dependency-helper/downloads)](https://packagist.org/packages/factorenergia/yii2-tag-dependency-helper)
+[![Latest Unstable Version](https://poser.pugx.org/factorenergia/yii2-tag-dependency-helper/v/unstable)](https://packagist.org/packages/factorenergia/yii2-tag-dependency-helper)
+[![License](https://poser.pugx.org/factorenergia/yii2-tag-dependency-helper/license)](https://packagist.org/packages/factorenergia/yii2-tag-dependency-helper)
+[![Code Climate](https://codeclimate.com/github/factorenergia/yii2-tag-dependency-helper/badges/gpa.svg)](https://codeclimate.com/github/factorenergia/yii2-tag-dependency-helper)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/factorenergia/yii2-tag-dependency-helper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/factorenergia/yii2-tag-dependency-helper/?branch=master)
+[![Build Status](https://travis-ci.org/factorenergia/yii2-tag-dependency-helper.svg?branch=master)](https://travis-ci.org/factorenergia/yii2-tag-dependency-helper)
 
 
 Helper for unifying cache tag names with invalidation support for Yii2 ActiveRecord models.
@@ -18,13 +18,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist devgroup/yii2-tag-dependency-helper "*"
+php composer.phar require --prefer-dist factorenergia/yii2-tag-dependency-helper "*"
 ```
 
 or add
 
 ```
-"devgroup/yii2-tag-dependency-helper": "*"
+"factorenergia/yii2-tag-dependency-helper": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -43,7 +43,7 @@ In your active record model add behavior and trait:
 
 ``` php
 
-use \DevGroup\TagDependencyHelper\TagDependencyTrait;
+use \factorenergia\TagDependencyHelper\TagDependencyTrait;
 
 /**
  * @inheritdoc
@@ -52,7 +52,7 @@ public function behaviors()
 {
     return [
         'CacheableActiveRecord' => [
-            'class' => \DevGroup\TagDependencyHelper\CacheableActiveRecord::className(),
+            'class' => \factorenergia\TagDependencyHelper\CacheableActiveRecord::className(),
         ],
     ];
 }
@@ -184,7 +184,7 @@ and add `LazyCacheTrait` to it, for example:
 namespace app\components;
 
 class MyCache extends \yii\caching\FileCache {
-    use \DevGroup\TagDependencyHelper\LazyCacheTrait;
+    use \factorenergia\TagDependencyHelper\LazyCacheTrait;
 }
 ```
 
@@ -211,7 +211,7 @@ return [
         'cache' => [
             'class' => '\yii\caching\FileCache',
             'as lazy' => [
-                'class' => '\DevGroup\TagDependencyHelper\LazyCache',
+                'class' => '\factorenergia\TagDependencyHelper\LazyCache',
             ],
         ],
     ],
@@ -230,4 +230,4 @@ return [
 
 ---
 
-Brought to you by [DevGroup.ru](https://devgroup.ru/). Check out our another [open-source projects](https://github.com/DevGroup-ru)!
+Brought to you by [DevGroup.ru](https://devgroup.ru/). Check out our another [open-source projects](https://github.com/factorenergia)!

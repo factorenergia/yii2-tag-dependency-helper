@@ -1,6 +1,6 @@
 <?php
 
-namespace DevGroup\TagDependencyHelper;
+namespace factorenergia\TagDependencyHelper;
 
 use Yii;
 use yii\base\Behavior;
@@ -14,7 +14,7 @@ use yii\base\Behavior;
  *      'cache' => [
  *          'class' => 'yii\caching\Memcache',
  *          'as lazy' => [
- *              'class' => 'DevGroup\TagDependencyHelper\LazyCache',
+ *              'class' => 'factorenergia\TagDependencyHelper\LazyCache',
  *          ],
  *      ],
  * ],
@@ -22,7 +22,7 @@ use yii\base\Behavior;
  * ```
  *
  *
- * @package DevGroup\TagDependencyHelper
+ * @package factorenergia\TagDependencyHelper
  */
 class LazyCache extends Behavior
 {

@@ -15,6 +15,6 @@ $_SERVER['SERVER_NAME'] = 'yii2-tag-dependency-helper.test';
 require_once(__DIR__ . '/../vendor/autoload.php');
 require_once(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
-Yii::setAlias('@DevGroup/TagDependencyHelper/tests', __DIR__);
-Yii::setAlias('@DevGroup/TagDependencyHelper', dirname(__DIR__).'/src/');
+Yii::setAlias('@factorenergia/TagDependencyHelper/tests', __DIR__);
+Yii::setAlias('@factorenergia/TagDependencyHelper', dirname(__DIR__).'/src/');
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace DevGroup\TagDependencyHelper\tests\models;
+namespace factorenergia\TagDependencyHelper\tests\models;
 
-use DevGroup\TagDependencyHelper\CacheableActiveRecord;
-use DevGroup\TagDependencyHelper\TagDependencyTrait;
+use factorenergia\TagDependencyHelper\CacheableActiveRecord;
+use factorenergia\TagDependencyHelper\TagDependencyTrait;
 
 /**
  * Class PostNoTrait
