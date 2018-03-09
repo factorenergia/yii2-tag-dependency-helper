@@ -4,10 +4,6 @@ yii2-tag-dependency-helper
 [![Total Downloads](https://poser.pugx.org/factorenergia/yii2-tag-dependency-helper/downloads)](https://packagist.org/packages/factorenergia/yii2-tag-dependency-helper)
 [![Latest Unstable Version](https://poser.pugx.org/factorenergia/yii2-tag-dependency-helper/v/unstable)](https://packagist.org/packages/factorenergia/yii2-tag-dependency-helper)
 [![License](https://poser.pugx.org/factorenergia/yii2-tag-dependency-helper/license)](https://packagist.org/packages/factorenergia/yii2-tag-dependency-helper)
-[![Code Climate](https://codeclimate.com/github/factorenergia/yii2-tag-dependency-helper/badges/gpa.svg)](https://codeclimate.com/github/factorenergia/yii2-tag-dependency-helper)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/factorenergia/yii2-tag-dependency-helper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/factorenergia/yii2-tag-dependency-helper/?branch=master)
-[![Build Status](https://travis-ci.org/factorenergia/yii2-tag-dependency-helper.svg?branch=master)](https://travis-ci.org/factorenergia/yii2-tag-dependency-helper)
-
 
 Helper for unifying cache tag names with invalidation support for Yii2 ActiveRecord models.
 
